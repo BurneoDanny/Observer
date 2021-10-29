@@ -20,20 +20,20 @@ public class PrincipalController {
 
 
 	@FXML
-	public void yellowBackgroundColor(MouseEvent event) {
+	public String BackgroundColorYellow(MouseEvent event) {
 		backgroundPane.setStyle("-fx-background-color:#ffef3d");
-        System.out.println("New background color: yellow");
+        return "Yellow";
 	}
 
 	@FXML
-	public void blueBackgroundColor(MouseEvent event) {
-		backgroundPane.setStyle("-fx-background-color:#3074e3");  
-        System.out.println("New background color: blue");
+	public String BackgroundColorBlue(MouseEvent event) {
+		backgroundPane.setStyle("-fx-background-color:#3074e3"); 
+        return "Blue";
 	}
 
 	@FXML
-	public void redBackgroundColor(MouseEvent event) {
+	public String BackgroundColorRed(MouseEvent event) {
 		backgroundPane.setStyle("-fx-background-color:#fa1616");  
-        System.out.println("New background color: red");
+        return "Red";
 	}
 }
